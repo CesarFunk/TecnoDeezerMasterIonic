@@ -1,0 +1,66 @@
+<!--
+  Generated template for the PerfilDetallePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Detalles de Perfil</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">
+          <ion-icon name="close"></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-card *ngIf="user">
+      <img src="{{ user.picture_big }}">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/Images/boy.png">
+      </ion-avatar>
+      <h2>{{ user.name }}</h2>
+      <p>{{ user.country }}</p>
+    </ion-item>
+
+
+    <ion-card-content>
+      <!-- Add card content here! -->
+      <p>
+        命关宣告面上切米程！苏生该众决？ 说难走南娘怪止买口该夜卖纪跳短几工 ？据妇改营争带少？刚星您灵讲刻思究 题梦某！远被场乎周禁众望弟左物图 。先耳为毫第环异标刻在选等工突汉知 这练市。慢下必耳身释存手！之传秘否床 绝边喊维。般境火助斯讲善部乐不石显与型默
+        推曾！屋各伦元养本青破含社绝视公如法科病。 念取母千巴令皮舞续青留断助议观土？站房板犯 者况迷散身我馆？萨奶个族打息此车退理密。跑 苏份印线窗学凡于。州幸难共哥北！
+      </p>
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 col-sm-4 text-center>
+          <button ion-button icon-left clear>
+      <ion-icon name="musical-note"></ion-icon>
+      <div>{{ playlists.length }} Listas</div>
+    </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear>
+      <ion-icon name="musical-notes"></ion-icon>
+      <div>{{ totalCanciones }} Canciones</div>
+    </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear>
+      <ion-icon name="finger-print"></ion-icon>
+      <div>{{ user.id }}</div>
+    </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,17 @@
+tecno-player {
+    progress[value] {
+        width: 100%;
+        display: block;
+        height: 5px;
+        border: none;
+        -webkit-appearance: none;
+        margin-top: 5px;
+        &::-webkit-progress-bar {
+            background-color: rgba(color($colors, primary), .5);
+        }
+        &::-webkit-progress-value {
+            transition: all .2s ease;
+            background-color: color($colors, primary);
+        }
+    }
+}
